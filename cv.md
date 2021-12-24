@@ -5,8 +5,7 @@
 
 ## Contact information
 >E-mail: *admin@ttp.by*
-
-Tel.: *+375-29-**535-15-27***
+>Tel.: *+375-29-**535-15-27***
 
 
 ## About me
@@ -46,7 +45,7 @@ def shell_sort(data: list[int]) -> list[int]:
                 delta = j - step
         step //= 2
     return data
-    ```
+```
 
 
 ## Work experiance
