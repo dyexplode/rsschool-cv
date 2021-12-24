@@ -32,7 +32,8 @@ I want to learn how to develop high-quality web applications.
     
 
 ## Sample code
-```def shell_sort(data: list[int]) -> list[int]:
+```
+def shell_sort(data: list[int]) -> list[int]:
     last_index = len(data) - 1
     step = len(data)//2
     while step > 0:
@@ -44,7 +45,8 @@ I want to learn how to develop high-quality web applications.
                 j = delta
                 delta = j - step
         step //= 2
-    return data```
+    return data
+    ```
 
 
 ## Work experiance
