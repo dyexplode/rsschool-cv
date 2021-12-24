@@ -1,2 +1,1 @@
-# rsschool-cv
-## This is first commit in Git Hub
+[https://dyexplode.github.io/rsschool-cv/cv](https://dyexplode.github.io/rsschool-cv/cv "My first CV")
