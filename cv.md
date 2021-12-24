@@ -1,15 +1,17 @@
 # Curriculum Vitae
 # Vladimir Kahanovski
-=====================
+===================================
 
 
 ## Contact information
-E-mail: *admin@ttp.by*
+>E-mail: *admin@ttp.by*
+
 Tel.: *+375-29-**535-15-27***
 
 
 ## About me
 Programming is a hobby. I am a chemical engineer.
+
 I want to learn how to develop high-quality web applications.
 
 ## Skills
@@ -30,7 +32,7 @@ I want to learn how to develop high-quality web applications.
     
 
 ## Sample code
-'''def shell_sort(data: list[int]) -> list[int]:
+```def shell_sort(data: list[int]) -> list[int]:
     last_index = len(data) - 1
     step = len(data)//2
     while step > 0:
@@ -42,7 +44,7 @@ I want to learn how to develop high-quality web applications.
                 j = delta
                 delta = j - step
         step //= 2
-    return data'''
+    return data```
 
 
 ## Work experiance
