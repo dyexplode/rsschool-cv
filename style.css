@@ -1,1 +1,17 @@
 /* This is initial file for cv stylesheet*/
+body {
+    background-color: white;
+    background-image: url("/image/background_15.png");
+    text-align: left;
+}
+
+header {
+    
+}
+main {
+    
+}
+
+div{
+    align-self: center;
+}
