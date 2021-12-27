@@ -6,7 +6,7 @@
 
 body {
     background-color: white;
-    background-image: url("/image/background_15.png");
+    background-image: url("image/background_15.png");
     padding: 0px;
     margin: 0px;
 }
@@ -54,15 +54,18 @@ main {
 footer {
     width: 900px;
     margin: 0 auto;
-    padding: 10px;
-    background-color: rgba(100, 100, 100, 0.8);
+    //background-color: rgba(250, 100, 100, 0.8);
+    border: 25px solid;
     
-    border: 25px solid #40c4c8;
-    padding: 20px;
     -moz-border-image: url(image/atmega200.png) 26 round round;
     -webkit-border-image: url(image/atmega200.png) 26 round round; 
     -o-border-image: url(image/atmega200.png) 26 round round;
     border-image: url(image/atmega200.png) 26 round round;
-    
+    box-sizing: padding-box;
+    position: relative;
 }
-
+footer section {
+	margin: 0px;
+    padding: 20px 0px 20px 0px;
+	background-color:rgba(250, 100, 100, 0.8);
+}
