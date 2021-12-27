@@ -57,5 +57,12 @@ footer {
     padding: 10px;
     background-color: rgba(100, 100, 100, 0.8);
     
+    border: 25px solid #40c4c8;
+    padding: 20px;
+    -moz-border-image: url(image/atmega200.png) 26 round round;
+    -webkit-border-image: url(image/atmega200.png) 26 round round; 
+    -o-border-image: url(image/atmega200.png) 26 round round;
+    border-image: url(image/atmega200.png) 26 round round;
+    
 }
 
