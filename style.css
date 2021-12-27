@@ -1,17 +1,61 @@
 /* This is initial file for cv stylesheet*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: white;
     background-image: url("/image/background_15.png");
-    text-align: left;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
-    
+    width: 900px;
+    height: 283px;
+    margin: 0 auto;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 10px;
 }
+header h1 {
+    font-size: 3em;
+}
+.float-img{
+    float: left;
+    margin: 0px 20px 0px 0px;
+} 
+ul.main-nav {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+ul.main-nav li{
+    float: left;
+    margin: 5px;
+    padding: 20px;
+    background-color: lawngreen;
+}
+ul.main-nav li a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
 main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+    clear: both;  
+}
+footer {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(100, 100, 100, 0.8);
     
 }
 
-div{
-    align-self: center;
-}

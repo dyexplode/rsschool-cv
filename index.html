@@ -7,17 +7,36 @@
     <title>Curriculum vitae</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body><div>
+<body>
     <header>
-        <img src="image/avatar_width=300px.png" alt="Avatar">
-        <nav></nav>
+        <div class="float-img">
+        <img src="image/avatar_width=300px.png" alt="Avatar" width=200px>
+        </div><h1>Kahanovski Vladimir</h1>
+            <h2>Contact information</h2>
+            <p>E-mail: admin@ttp.by</p>
+            <p>Tel.: +375-29-535-15-27</p>
+        
+        
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#language">Languages</a></li>
+            </ul>
+
+
+
+        </nav>
     </header>
     <main>
-        <h1>Kahanovski Vladimir</h1>
-        <h2>About me</h2>
+        
+        <h2 id="about">About me</h2>
         <p>Programming is a hobby. I am a chemical engineer.<br>
          I want to learn how to develop high-quality web applications.</p>
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <p>
             <ol>
                 <li> Programming languages</li>
@@ -43,7 +62,7 @@
             </ol>
         </p>
 
-        <h2>Sample code</h2>
+        <h2 id="code">Sample code</h2>
         <p><code>
         <pre>
 def shell_sort(data: list[int]) -> list[int]:
@@ -62,18 +81,18 @@ def shell_sort(data: list[int]) -> list[int]:
             </pre>
         </code></p>
 
-        <h2>Work experiance</h2>
+        <h2 id="work">Work experiance</h2>
         <p>As an example, a website written in delphi 7.
             <a href="http://flomaster.by" title="Simple site">Flomaster.by</a></p>
         
-        <h2>Education and training</h2>
+        <h2 id="education">Education and training</h2>
         <p>In 2012 graduated from the Belarusian State Technological University with a degree in chemical engineering.</p>
         
-        <h2>Languages</h2>
+        <h2 id="language">Languages</h2>
         <p><ul>
             <li> Belorussian</li>
             <li> Russian</li>
-            <li> English **Pre-Intermediate** (А2)</li>
+            <li> English Pre-Intermediate (А2)</li>
            <ul>
         </p>
     </main>
@@ -82,6 +101,6 @@ def shell_sort(data: list[int]) -> list[int]:
         <img src="image/git.png" alt="Logo git" width="64px"> <a href="https://github.com/dyexplode">My GitHub</a>
         <p> &COPY; 2021</p>
     </footer>
-</div>
+
 </body>
 </html>
