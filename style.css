@@ -1,4 +1,6 @@
-/* This is initial file for cv stylesheet*/
+/* This is initial file for cv stylesheet
+Reset all margins and paddings properties
+*/
 * {
     margin: 0px;
     padding: 0px;
@@ -9,19 +11,29 @@ body {
     background-image: url("image/background_15.png");
     padding: 0px;
     margin: 0px;
+    color: white;
 }
 
+/*Centered content site*/
 header {
     width: 900px;
-    height: 283px;
     margin: 0 auto;
-    background-color: rgba(100, 100, 100, 0.8);
     padding: 10px;
+    background-color: rgba(100, 100, 100, 0.8);
 }
+
+/* Fix float left property*/
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header h1 {
     font-size: 3em;
 }
-.float-img{
+
+header img{
     float: left;
     margin: 0px 20px 0px 0px;
 } 
@@ -48,24 +60,66 @@ main {
     width: 900px;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(200, 200, 200, 0.8);
-    clear: both;  
+    background-color: rgba(31, 29, 29, 0.8);
+    /*color:greenyellow;*/
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
+
+main h2{
+    margin: 30px 0px 20px 30px;
+}
+
+main p, main ul, main ol, main pre {
+    margin: 10px 0px 0px 50px;
+}
+
+
 footer {
     width: 900px;
     margin: 0 auto;
-    //background-color: rgba(250, 100, 100, 0.8);
-    border: 25px solid;
-    
-    -moz-border-image: url(image/atmega200.png) 26 round round;
-    -webkit-border-image: url(image/atmega200.png) 26 round round; 
-    -o-border-image: url(image/atmega200.png) 26 round round;
-    border-image: url(image/atmega200.png) 26 round round;
+    border: 20px solid;
+    color: white;
+    -moz-border-image: url(image/atmega200.png) 20 round round;
+    -webkit-border-image: url(image/atmega200.png) 20 round round; 
+    -o-border-image: url(image/atmega200.png) 20 round round;
+    border-image: url(image/atmega200.png) 20 round round;
     box-sizing: padding-box;
     position: relative;
 }
-footer section {
+footer div {
 	margin: 0px;
     padding: 20px 0px 20px 0px;
-	background-color:rgba(250, 100, 100, 0.8);
+	background-image: url("image/korpus_atmega256.png"); /*background-color:rgba(62, 65, 70, 1);*/
+    text-align: center;
 }
+
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.flink {
+    margin: auto;
+    padding: 0px;
+    align-content: center;
+}
+.flink a, main a:hover { 
+    text-decoration: none;
+    color: white;
+}
+
+.flink a:hover, main a { 
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.flink a:active, main a:active { 
+    text-decoration: none;
+    color: yellow;
+}
+
+/*.flink a:visited, main a:visited { 
+    text-decoration: none;
+    color: red;
+}*/
