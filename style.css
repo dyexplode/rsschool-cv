@@ -20,6 +20,7 @@ header {
     margin: 0 auto;
     padding: 10px;
     background-color: rgba(100, 100, 100, 0.8);
+    
 }
 
 /* Fix float left property*/
@@ -31,12 +32,50 @@ header:after {
 
 header h1 {
     font-size: 3em;
+   
 }
 
 header img{
     float: left;
     margin: 0px 20px 0px 0px;
 } 
+
+
+/* Addition 1602 lcd display */
+.contacts {
+    width: 241px;
+    height: 66px;
+    margin: 20px 0px 20px 240px;
+    border: 35px solid;
+    border-top-width: 20px;
+    border-right-width: 29px;
+    border-bottom-width: 20px;
+    border-left-width: 30px;
+    -moz-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    -webkit-border-image: url(image/lcd_1602.png) 20 29 20 30 round round; 
+    -o-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    
+    border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    position: relative;
+    z-index: 2;        
+}
+/*Text in lcd display */
+.contacts div {
+    color: black;
+    font-family: monospace;
+    padding: 9px 0px 0px 10px;
+    margin: auto;
+    position: relative; 
+    background-color: rgba(82, 216, 29, 0.7);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.contacts div h2{
+    padding: 0px 0px 5px 0px;
+}
+
+
 ul.main-nav {
     list-style: none;
     display: block;
@@ -77,6 +116,7 @@ main p, main ul, main ol, main pre {
 footer {
     width: 900px;
     margin: 0 auto;
+    padding: 0px;
     border: 20px solid;
     color: white;
     -moz-border-image: url(image/atmega200.png) 20 round round;
@@ -85,10 +125,11 @@ footer {
     border-image: url(image/atmega200.png) 20 round round;
     box-sizing: padding-box;
     position: relative;
+
 }
 footer div {
 	margin: 0px;
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
 	background-image: url("image/korpus_atmega256.png"); /*background-color:rgba(62, 65, 70, 1);*/
     text-align: center;
 }
