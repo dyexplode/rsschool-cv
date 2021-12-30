@@ -43,10 +43,8 @@ header img{
 
 /* Addition 1602 lcd display */
 .contacts {
-    width: 241px;
-    height: 66px;
-    margin: 20px 0px 20px 240px;
-    border: 35px solid;
+    margin: 20px 0px 20px 20px;
+    border: solid;
     border-top-width: 20px;
     border-right-width: 29px;
     border-bottom-width: 20px;
@@ -54,8 +52,9 @@ header img{
     -moz-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
     -webkit-border-image: url(image/lcd_1602.png) 20 29 20 30 round round; 
     -o-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
-    
     border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    display: inline-flex;
+    justify-content: flex-start;
     position: relative;
     z-index: 2;        
 }
@@ -160,7 +159,7 @@ footer div {
     color: yellow;
 }
 
-/*.flink a:visited, main a:visited { 
+.flink a:visited, main a:visited { 
     text-decoration: none;
     color: red;
-}*/
+}
