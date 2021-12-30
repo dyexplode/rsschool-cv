@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!--Header part of site-->
     <header>
         <img src="image/avatar_width=300px.png" alt="Avatar" width="200">
         <h1>Kahanovski Vladimir</h1>
@@ -34,6 +36,9 @@
 
         </nav>
     </header>
+    
+    
+    <!--Main part of site-->
     <main>
         
         <h2 id="about">About me</h2>
@@ -43,7 +48,7 @@
 
         <h2 id="skills">Skills</h2>
         
-            <ol>
+            <ul>
                 <li> Programming languages</li>
                 <ul>
                     <li> Delphi</li>
@@ -64,27 +69,27 @@
                     <li> Delphi 7</li>
                     <li> Visual Studio Code</li>
                 </ul>
-            </ol>
+            </ul>
         
 
         <h2 id="code">Sample code</h2>
-        <code>
         <pre>
-def shell_sort(data: list[int]) -> list[int]:
-    last_index = len(data) - 1
-    step = len(data)//2
-    while step > 0:
-        for i in range(step, last_index + 1, 1):
-            j = i
-            delta = j - step
-            while delta >= 0 and data[delta] > data[j]:
-                data[delta], data[j] = data[j], data[delta]
-                j = delta
-                delta = j - step
-        step //= 2
-    return data
-            </pre>
+            <code>     
+                def shell_sort(data: list[int]) -> list[int]:
+                    last_index = len(data) - 1
+                    step = len(data)//2
+                    while step > 0:
+                        for i in range(step, last_index + 1, 1):
+                            j = i
+                            delta = j - step
+                            while delta >= 0 and data[delta] > data[j]:
+                                data[delta], data[j] = data[j], data[delta]
+                                j = delta
+                                delta = j - step
+                        step //= 2
+                    return data            
         </code>
+    </pre>
 
         <h2 id="work">Work experiance</h2>
         <p>As an example, a website written in delphi 7.
@@ -98,9 +103,11 @@ def shell_sort(data: list[int]) -> list[int]:
             <li> Belorussian (C1)</li>
             <li> Russian (C2)</li>
             <li> English Pre-Intermediate (А2)</li>
-           <ul>
+        </ul>
         
     </main>
+
+    <!--Footer part of site-->
     <footer>
 	<div>
         <div class="fcontainer">
