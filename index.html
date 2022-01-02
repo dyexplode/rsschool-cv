@@ -15,9 +15,11 @@
         <h1>Kahanovski Vladimir</h1>
             <div class="contacts" title="Contact information">
                 <div>
-                    <h2>Contact information</h2>
-                    <p>E-mail: admin@ttp.by</p>
-                    <p>Tel.: +375-29-535-15-27</p>
+                    <h2>Contact information:</h2>
+                    <ul>
+                      <li>E-mail: admin@ttp.by</li>
+                      <li>Tel.: +375-29-535-15-27</li>
+                    </ul>
                 </div>
             </div>
         
@@ -25,7 +27,7 @@
         <nav>
             <ul class="main-nav">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#education">Education</a></li>
@@ -42,8 +44,10 @@
     <main>
         
         <h2 id="about">About me</h2>
-        <p>Programming is a hobby. I am a chemical engineer.<br>
-         I want to learn how to develop high-quality web applications.
+        <p>Programming is part of a hobby. 
+        My main hobby is radio engineering (working with microcontrollers). 
+        I am a chemist-engineer-technologist by profession.
+         I want to learn developing high-quality web applications.
         </p>
 
         <h2 id="skills">Skills</h2>
@@ -78,19 +82,19 @@
         <h2 id="code">Sample code</h2>
         <pre>
             <code>     
-                def shell_sort(data: list[int]) -> list[int]:
-                    last_index = len(data) - 1
-                    step = len(data)//2
-                    while step > 0:
-                        for i in range(step, last_index + 1, 1):
-                            j = i
-                            delta = j - step
-                            while delta >= 0 and data[delta] > data[j]:
-                                data[delta], data[j] = data[j], data[delta]
-                                j = delta
-                                delta = j - step
-                        step //= 2
-                    return data            
+def shell_sort(data: list[int]) -> list[int]:
+    last_index = len(data) - 1
+    step = len(data)//2
+    while step > 0:
+        for i in range(step, last_index + 1, 1):
+            j = i
+            delta = j - step
+            while delta >= 0 and data[delta] > data[j]:
+                data[delta], data[j] = data[j], data[delta]
+                j = delta
+                delta = j - step
+        step //= 2
+    return data            
         </code>
     </pre>
 

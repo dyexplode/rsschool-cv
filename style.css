@@ -9,18 +9,17 @@ Reset all margins and paddings properties
 body {
     background-color: white;
     background-image: url("image/background_15.png");
-    padding: 0px;
-    margin: 0px;
     color: white;
 }
 
-/*Centered content site*/
+
+/* Header style */
+/* Centered content site */
 header {
     width: 900px;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(100, 100, 100, 0.8);
-    
+    background-color: rgba(30, 30, 30, 0.8);
 }
 
 /* Fix float left property*/
@@ -31,15 +30,14 @@ header:after {
 }
 
 header h1 {
-    font-size: 3em;
-   
+    font-size: 3em;  
 }
 
+/* Avatar image */
 header img{
     float: left;
     margin: 0px 20px 0px 0px;
 } 
-
 
 /* Addition 1602 lcd display */
 .contacts {
@@ -55,45 +53,65 @@ header img{
     border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
     display: inline-flex;
     justify-content: flex-start;
-    position: relative;
-    z-index: 2;        
 }
+
 /*Text in lcd display */
 .contacts div {
     color: black;
     font-family: monospace;
     padding: 9px 0px 0px 10px;
     margin: auto;
-    position: relative; 
     background-color: rgba(82, 216, 29, 0.7);
-    z-index: 1;
     border-radius: 4px;
 }
 
+/* Header from LCD text*/
 .contacts div h2{
-    padding: 0px 0px 5px 0px;
+    padding: 0px 10px 3px 0px;
 }
 
+/* Contact information text */
+.contacts div ul{
+    padding: 0px 0px 3px 5px;
+}
 
-ul.main-nav {
+/* Main navigation */
+.main-nav {
     list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li{   
+    float:left;
+}
+
+.main-nav a {
     display: block;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-}
-ul.main-nav li{
-    float: left;
-    margin: 5px;
     padding: 20px;
-    background-color: lawngreen;
-}
-ul.main-nav li a {
     text-decoration: none;
     font-size: 1.2em;
+    color: black;
+    background-color: grey;
 }
 
+.main-nav a:hover { 
+    color: greenyellow;
+    background-color: black;
+}
 
+.main-nav a:active { 
+    color: yellow;
+    background-color: red;
+}
+
+.main-nav li + li {
+    border-left: 2px solid #d60101;
+
+}
+
+/* Main style*/
 main {
     width: 900px;
     margin: 0 auto;
@@ -111,7 +129,7 @@ main p, main ul, main ol, main pre {
     margin: 10px 0px 0px 50px;
 }
 
-
+/* Footer styles*/
 footer {
     width: 900px;
     margin: 0 auto;
@@ -144,6 +162,8 @@ footer div {
     padding: 0px;
     align-content: center;
 }
+
+/*Footer link and main link inverse hover / normal*/
 .flink a, main a:hover { 
     text-decoration: none;
     color: white;
