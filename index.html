@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--Header part of site-->
+    <header>
+        <img src="image/avatar_width=300px.png" alt="Avatar" width="200" title="Happy New Year!!!">
+        <h1>Kahanovski Vladimir</h1>
+            <div class="contacts" title="Contact information">
+                <div>
+                    <h2>Contact information:</h2>
+                    <ul>
+                      <li>E-mail: admin@ttp.by</li>
+                      <li>Tel.: +375-29-535-15-27</li>
+                    </ul>
+                </div>
+            </div>
+        
+        
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#language">Languages</a></li>
+            </ul>
+
+
+
+        </nav>
+    </header>
+    
+    
+    <!--Main part of site-->
+    <main>
+        
+        <h2 id="about">About me</h2>
+        <p>Programming is part of a hobby. 
+        My main hobby is radio engineering (working with microcontrollers). 
+        I am a chemist-engineer-technologist by profession.
+         I want to learn developing high-quality web applications.
+        </p>
+
+        <h2 id="skills">Skills</h2>
+        
+            <ol>
+                <li> Programming languages
+                    <ul>
+                        <li> Delphi</li>
+                        <li> C</li>
+                        <li> SQL</li>
+                        <li> Python</li>
+                        <li> Visual Basic for Application (VBA)</li>
+                        <li> HTML</li>
+                    </ul>
+                </li>
+                <li> Operation systems
+                    <ul>
+                        <li> Windows</li>
+                        <li> FreeBSD</li>
+                    </ul>
+                </li>
+                <li> Development tools
+                    <ul>
+                        <li> CodeVision AVR</li>
+                        <li> Delphi 7</li>
+                        <li> Visual Studio Code</li>
+                    </ul>
+                </li>
+            </ol>
+        
+
+        <h2 id="code">Sample code</h2>
+        <pre>
+            <code>     
+def shell_sort(data: list[int]) -> list[int]:
+    last_index = len(data) - 1
+    step = len(data)//2
+    while step > 0:
+        for i in range(step, last_index + 1, 1):
+            j = i
+            delta = j - step
+            while delta >= 0 and data[delta] > data[j]:
+                data[delta], data[j] = data[j], data[delta]
+                j = delta
+                delta = j - step
+        step //= 2
+    return data            
+        </code>
+    </pre>
+
+        <h2 id="work">Work experiance</h2>
+        <p>As an example, a website written in delphi 7.
+            <a href="http://flomaster.by" title="Example site">Flomaster.by</a></p>
+        
+        <h2 id="education">Education and training</h2>
+        <p>In 2012 graduated from the Belarusian State Technological University with a degree in chemical engineering.</p>
+        
+        <h2 id="language">Languages</h2>
+        <ul>
+            <li> Belorussian (C1)</li>
+            <li> Russian (C2)</li>
+            <li> English Pre-Intermediate (А2)</li>
+        </ul>
+        
+    </main>
+
+    <!--Footer part of site-->
+    <footer>
+	<div>
+        <div class="fcontainer">
+            <div class="flink">
+                <a href="https://rs.school/js/"><img src="image/rsschool_new.png" alt="Logo course" width="176" title="My active course from RS SCHOOL"></a>
+                <p><a href="https://rs.school/js/">Course «JavaScript/Front-end»</a></p>
+            </div>
+            <div class="flink">
+                <img src="image/git_alpha.png" alt="Logo git" width="64" title="Do you want to visit my GitHub?">
+                <p><a href="https://github.com/dyexplode">My GitHub</a></p>
+            </div>
+        	
+	    </div>
+
+        <p> &COPY; 2021</p>
+    </div>
+    </footer>
+
+</body>
+</html>

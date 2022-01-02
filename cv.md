@@ -10,9 +10,10 @@
 
 
 ## About me
-Programming is a hobby. I am a chemical engineer.
-
-I want to learn how to develop high-quality web applications.
+Programming is part of a hobby. 
+My main hobby is radio engineering (working with microcontrollers). 
+I am a chemist-engineer-technologist by profession.
+I want to learn developing high-quality web applications.
 
 ## Skills
 * Programming languages

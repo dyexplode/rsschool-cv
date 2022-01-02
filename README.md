@@ -1,1 +1,1 @@
-[https://dyexplode.github.io/rsschool-cv/cv](https://dyexplode.github.io/rsschool-cv/cv "My first CV")
+[https://dyexplode.github.io/rsschool-cv/](https://dyexplode.github.io/rsschool-cv/ "My first HTML CV")

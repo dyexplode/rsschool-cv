@@ -1,0 +1,184 @@
+/* This is initial file for cv stylesheet
+Reset all margins and paddings properties
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    background-image: url("image/background_15.png");
+    color: white;
+}
+
+
+/* Header style */
+/* Centered content site */
+header {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.8);
+}
+
+/* Fix float left property*/
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    font-size: 3em;  
+}
+
+/* Avatar image */
+header img{
+    float: left;
+    margin: 0px 20px 0px 0px;
+} 
+
+/* Addition 1602 lcd display */
+.contacts {
+    margin: 20px 0px 20px 20px;
+    border: solid;
+    border-top-width: 20px;
+    border-right-width: 29px;
+    border-bottom-width: 20px;
+    border-left-width: 30px;
+    -moz-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    -webkit-border-image: url(image/lcd_1602.png) 20 29 20 30 round round; 
+    -o-border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    border-image: url(image/lcd_1602.png) 20 29 20 30 round round;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+/*Text in lcd display */
+.contacts div {
+    color: black;
+    font-family: monospace;
+    padding: 9px 0px 0px 10px;
+    margin: auto;
+    background-color: rgba(82, 216, 29, 0.7);
+    border-radius: 4px;
+}
+
+/* Header from LCD text*/
+.contacts div h2{
+    padding: 0px 10px 3px 0px;
+}
+
+/* Contact information text */
+.contacts div ul{
+    padding: 0px 0px 3px 5px;
+}
+
+/* Main navigation */
+.main-nav {
+    list-style: none;
+    list-style-type: none;
+}
+
+.main-nav li{   
+    float:left;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: monospace;
+    color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+.main-nav a:hover { 
+    color: greenyellow;
+    background-color: black;
+}
+/*
+.main-nav a:active { 
+    color: yellow;
+    background-color: red;
+}*/
+
+.main-nav li + li {
+    border-left: 1px solid #3a3a3a;
+
+}
+
+/* Main style*/
+main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.8);
+    /*color:greenyellow;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2{
+    margin: 30px 0px 20px 30px;
+}
+
+main p, main ul, main ol, main pre {
+    margin: 10px 0px 0px 50px;
+}
+
+/* Footer styles*/
+footer {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 20px solid;
+    color: white;
+    -moz-border-image: url(image/atmega200.png) 20 round round;
+    -webkit-border-image: url(image/atmega200.png) 20 round round; 
+    -o-border-image: url(image/atmega200.png) 20 round round;
+    border-image: url(image/atmega200.png) 20 round round;
+    box-sizing: padding-box;
+    position: relative;
+
+}
+footer div {
+	margin: 0px;
+    padding: 10px 0px 10px 0px;
+	background-image: url("image/korpus_atmega256.png"); /*background-color:rgba(62, 65, 70, 1);*/
+    text-align: center;
+}
+
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.flink {
+    margin: auto;
+    padding: 0px;
+    align-content: center;
+}
+
+/*Footer link and main link inverse hover / normal*/
+.flink a, main a:hover { 
+    text-decoration: none;
+    color: white;
+}
+
+.flink a:hover, main a { 
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.flink a:active, main a:active { 
+    text-decoration: none;
+    color: yellow;
+}
+
+.flink a:visited, main a:visited { 
+    text-decoration: none;
+    color: red;
+}
