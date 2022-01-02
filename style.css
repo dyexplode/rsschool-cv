@@ -79,35 +79,34 @@ header img{
 .main-nav {
     list-style: none;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .main-nav li{   
     float:left;
 }
 
-.main-nav a {
+.main-nav li a {
     display: block;
-    padding: 20px;
+    padding: 20px 15px;
     text-decoration: none;
     font-size: 1.2em;
-    color: black;
-    background-color: grey;
+    font-family: monospace;
+    color: white;
+    background-color: rgb(28, 28, 28);
 }
 
 .main-nav a:hover { 
     color: greenyellow;
     background-color: black;
 }
-
+/*
 .main-nav a:active { 
     color: yellow;
     background-color: red;
-}
+}*/
 
 .main-nav li + li {
-    border-left: 2px solid #d60101;
+    border-left: 1px solid #3a3a3a;
 
 }
 
@@ -116,9 +115,9 @@ main {
     width: 900px;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(31, 29, 29, 0.8);
+    background-color: rgba(30, 30, 30, 0.8);
     /*color:greenyellow;*/
-    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h2{
