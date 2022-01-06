@@ -17,7 +17,7 @@ body {
 /* Centered content site */
 header {
     width: 900px;
-    margin: 0 auto;
+    margin: 8px auto 0px auto;
     padding: 10px;
     background-color: rgba(30, 30, 30, 0.8);
 }
@@ -71,8 +71,9 @@ header img{
 }
 
 /* Contact information text */
-.contacts div ul{
+.contacts-content{
     padding: 0px 0px 3px 5px;
+    list-style: none;
 }
 
 /* Main navigation */
@@ -125,13 +126,34 @@ main h2{
 }
 
 main p, main ul, main ol, main pre {
-    margin: 10px 0px 0px 50px;
+    margin: 10px 30px 0px 50px;
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-family: monospace;
+    text-align: justify;
 }
+
+.skill-list li {
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.work-ex p, .work-ex a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/*
+main p, main li, main li, code {
+    font-size: 1.5em;
+    font-family: monospace;
+
+}*/
 
 /* Footer styles*/
 footer {
     width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0px;
     border: 20px solid;
     color: white;
@@ -153,7 +175,7 @@ footer div {
 
 .fcontainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .flink {
@@ -178,7 +200,9 @@ footer div {
     color: yellow;
 }
 
+/*
 .flink a:visited, main a:visited { 
     text-decoration: none;
     color: red;
 }
+*/

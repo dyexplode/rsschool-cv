@@ -16,7 +16,7 @@
             <div class="contacts" title="Contact information">
                 <div>
                     <h2>Contact information:</h2>
-                    <ul>
+                    <ul class="contacts-content">
                       <li>E-mail: admin@ttp.by</li>
                       <li>Tel.: +375-29-535-15-27</li>
                     </ul>
@@ -42,19 +42,20 @@
     
     <!--Main part of site-->
     <main>
-        
+        <section>
         <h2 id="about">About me</h2>
         <p>Programming is part of a hobby. 
         My main hobby is radio engineering (working with microcontrollers). 
         I am a chemist-engineer-technologist by profession.
          I want to learn developing high-quality web applications.
         </p>
-
+    </section>
+      <section>
         <h2 id="skills">Skills</h2>
         
             <ol>
                 <li> Programming languages
-                    <ul>
+                    <ul class="skill-list">
                         <li> Delphi</li>
                         <li> C</li>
                         <li> SQL</li>
@@ -64,25 +65,25 @@
                     </ul>
                 </li>
                 <li> Operation systems
-                    <ul>
+                    <ul class="skill-list">
                         <li> Windows</li>
                         <li> FreeBSD</li>
                     </ul>
                 </li>
                 <li> Development tools
-                    <ul>
+                    <ul class="skill-list">
                         <li> CodeVision AVR</li>
                         <li> Delphi 7</li>
                         <li> Visual Studio Code</li>
                     </ul>
                 </li>
             </ol>
-        
+      </section>
 
+<section>
         <h2 id="code">Sample code</h2>
-        <pre>
-            <code>     
-def shell_sort(data: list[int]) -> list[int]:
+             
+<pre><code>def shell_sort(data: list[int]) -> list[int]:
     last_index = len(data) - 1
     step = len(data)//2
     while step > 0:
@@ -94,27 +95,30 @@ def shell_sort(data: list[int]) -> list[int]:
                 j = delta
                 delta = j - step
         step //= 2
-    return data            
-        </code>
-    </pre>
-
+    return data </code></pre>           
+</section>
+      <section class="work-ex"> 
         <h2 id="work">Work experiance</h2>
-        <p>I don't have a large number of projects that are worthy of attention and at the same time working online.</p>
-        <p>As an example, a website written in delphi 7.
-            <a href="http://flomaster.by" title="Example site">Flomaster.by</a></p>
-        <p>And my CV from RS SCHOOL.
+        <p>I don't have a large number of projects that are worthy of attention and at the same time working online.<br>
+        As an example, a website written in delphi 7.
+            <a href="http://flomaster.by" title="Example site">Flomaster.by</a><br>
+        And my CV from RS SCHOOL.
                 <a href="https://dyexplode.github.io/rsschool-cv/" title="My first CV">CV. HTML and CSS basics</a></p>
-        
+      </section> 
+      
+      <section>  
         <h2 id="education">Education and training</h2>
         <p>In 2012 graduated from the Belarusian State Technological University with a degree in chemical engineering.</p>
-        
+      </section>  
+      
+      <section> 
         <h2 id="language">Languages</h2>
         <ul>
             <li> Belorussian (C1)</li>
             <li> Russian (C2)</li>
             <li> English Pre-Intermediate (А2)</li>
         </ul>
-        
+      </section>
     </main>
 
     <!--Footer part of site-->
@@ -126,7 +130,7 @@ def shell_sort(data: list[int]) -> list[int]:
                 <p><a href="https://rs.school/js/">Course «JavaScript/Front-end»</a></p>
             </div>
             <div class="flink">
-                <img src="image/git_alpha.png" alt="Logo git" width="64" title="Do you want to visit my GitHub?">
+                <a href="https://github.com/dyexplode"><img src="image/git_alpha.png" alt="Logo git" width="64" title="Do you want to visit my GitHub?"></a>
                 <p><a href="https://github.com/dyexplode">My GitHub</a></p>
             </div>
         	
