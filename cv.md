@@ -23,6 +23,7 @@ I want to learn developing high-quality web applications.
     + Python
     + Visual Basic for Application (VBA)
     + HTML
+    + JavaScript
 * Operation systems
     + Windows
     + FreeBSD
@@ -51,13 +52,19 @@ def shell_sort(data: list[int]) -> list[int]:
 
 
 ## Work experiance
+In process learning on course "JavaScript/Front-end. Stage 0" of RS School I make some projects:
+- [My CV](https://dyexplode.github.io/rsschool-cv/ "The first project in course")
+- [Portfolio](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/portfolio/ "Make this project from Figma pattern")
+- [Eco-sounds](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/eco-sounds/ "Learn to work with audio in Javascript")
+- [Game three in row](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/random-game/ "I like this game")
+
 As an example, a website written in delphi 7.
 [Flomaster.by](http://flomaster.by "Simple site")
 
 
 ## Education and training
 In 2012 graduated from the Belarusian State Technological University with a degree in chemical engineering.
-
+In 2022 graduated course from the RS School "JavaScript/Front-end. Stage 0".
 ## Languages
 - Belorussian
 - Russian
