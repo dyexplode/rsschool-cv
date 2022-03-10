@@ -56,6 +56,7 @@ In process learning on course "JavaScript/Front-end. Stage 0" of RS School I mak
 - [My CV](https://dyexplode.github.io/rsschool-cv/ "The first project in course")
 - [Portfolio](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/portfolio/ "Make this project from Figma pattern")
 - [Eco-sounds](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/eco-sounds/ "Learn to work with audio in Javascript")
+- [Movie-app](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/movie-app/ "Example to usage API")
 - [Game three in row](https://rolling-scopes-school.github.io/dyexplode-JSFEPRESCHOOL/random-game/ "I like this game")
 
 As an example, a website written in delphi 7.
@@ -64,6 +65,7 @@ As an example, a website written in delphi 7.
 
 ## Education and training
 In 2012 graduated from the Belarusian State Technological University with a degree in chemical engineering.
+
 In 2022 graduated course from the RS School "JavaScript/Front-end. Stage 0".
 ## Languages
 - Belorussian

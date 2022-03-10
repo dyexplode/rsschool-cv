@@ -6,20 +6,42 @@ Reset all margins and paddings properties
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: white;
-    background-image: url("image/background_15.png");
+    background-color: #085f3d;
+    /*background-image: url("image/background_15.png");*/
     color: white;
 }
 
+.wrap {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main {
+    margin: 0 auto;
+    max-width: 900px;
+    background-image: url("image/background_15.png");
+    background-color: rgba(50, 50, 50, 0.8);
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 /* Header style */
 /* Centered content site */
 header {
-    width: 900px;
-    margin: 8px auto 0px auto;
+    width: 300px;
+    margin: 15px 0 0 10px;
     padding: 10px;
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 20px;
 }
 
 /* Fix float left property*/
@@ -30,18 +52,17 @@ header:after {
 }
 
 header h1 {
-    font-size: 3em;  
+    font-size: 1.8em;  
 }
 
 /* Avatar image */
 header img{
-    float: left;
-    margin: 0px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 } 
 
 /* Addition 1602 lcd display */
 .contacts {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px;
     border: solid;
     border-top-width: 20px;
     border-right-width: 29px;
@@ -59,7 +80,7 @@ header img{
 .contacts div {
     color: black;
     font-family: monospace;
-    padding: 9px 0px 0px 10px;
+    padding: 2px 0px 0px 10px;
     margin: auto;
     background-color: rgba(82, 216, 29, 0.7);
     border-radius: 4px;
@@ -77,9 +98,15 @@ header img{
 }
 
 /* Main navigation */
+.nav-container {
+width: 900px;
+}
+
 .main-nav {
     list-style: none;
     list-style-type: none;
+    display:flex;
+    justify-content:center;
 }
 
 .main-nav li{   
@@ -111,18 +138,104 @@ header img{
 
 }
 
+.lcd {
+    width: 300px;
+    height: 443px;
+    padding: 34px 0 0 26px;
+    box-sizing: border-box;
+    background-repeat: none;
+    background-image: url(image/game-background.png);
+    position:relative;
+}
+
+.game-interface {
+    width: 255px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+.game-nav {
+    margin-left: 20px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px 20px;
+    font-size: 26px;
+    text-align: center;
+   
+}
+
+
+.container {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+.score-container {
+    
+    font-size: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+*/
+.score, .level, .moves, .time{
+padding-top: 10px;   
+}
+
+button {
+    height:45px;
+    width: 80px;
+    background-color: transparent;
+    color: var(--thirty-color);
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    border-color: var(--thirty-color);
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main style*/
 main {
-    width: 900px;
+    
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(30, 30, 30, 0.8);
+    
     /*color:greenyellow;*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+section {
+    margin: 15px 0;
+    padding: 10px 0;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 20px;
+}
+
 main h2{
-    margin: 30px 0px 20px 30px;
+    margin: 10px 0px 20px 30px;
 }
 
 main p, main ul, main ol, main pre {
@@ -177,7 +290,7 @@ footer {
     -webkit-border-image: url(image/atmega200.png) 20 round round; 
     -o-border-image: url(image/atmega200.png) 20 round round;
     border-image: url(image/atmega200.png) 20 round round;
-    box-sizing: padding-box;
+    box-sizing: border-box;
     position: relative;
 
 }
