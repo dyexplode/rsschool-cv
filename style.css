@@ -6,6 +6,20 @@ Reset all margins and paddings properties
     padding: 0px;
 }
 
+
+@font-face {
+    font-family: SevenSegment; /* Гарнитура шрифта */
+    src: url(assets/fonts/7-Segment.ttf); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: gold;
+    --thirty-color: lightgreen;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,8 +52,8 @@ body {
 /* Centered content site */
 header {
     width: 300px;
-    margin: 15px 0 0 10px;
-    padding: 10px;
+    margin: 25px 0 0 10px;
+    padding: 20px 10px 10px 10px;
     background-color: rgba(30, 30, 30, 0.5);
     border-radius: 20px;
 }
@@ -99,18 +113,19 @@ header img{
 
 /* Main navigation */
 .nav-container {
-width: 900px;
+    margin-bottom: 15px;
 }
 
 .main-nav {
     list-style: none;
     list-style-type: none;
     display:flex;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-nav li{   
-    float:left;
+   margin: 2px;
 }
 
 .main-nav li a {
@@ -133,10 +148,165 @@ width: 900px;
     background-color: red;
 }*/
 
-.main-nav li + li {
-    border-left: 1px solid #3a3a3a;
+.main-nav li {
+    border: 1px solid #3a3a3a;
 
 }
+/*Game-style*/
+/* Preloader game*/
+.preloader {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    right: 20px;
+    bottom: 50px;
+    border-radius: 5px;
+    background: black;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.loadline {
+ color: white;
+}
+
+.rotate {
+    width: 25px;
+    height: 25px;
+    position:relative;
+    -webkit-animation: preloader-rotate 0.5s infinite linear;
+    animation: preloader-rotate 0.4s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.string-info {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.line-white {
+    width: 100%;
+    height: 2.5px;
+    background: white;
+    margin: 3px 0;
+  }
+
+@keyframes preloader-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+
+    14.284% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+
+    14.285% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+      }
+    
+      28.57% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+      }
+
+    28.571% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+      }
+
+      42.856% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+      }
+
+      42.857% {
+        -webkit-transform: rotate(120deg);
+                transform: rotate(120deg);
+      }
+    57.142% {
+        -webkit-transform: rotate(120deg);
+                transform: rotate(120deg);
+      }
+
+    57.143% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+      71.427% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+
+    71.428% {
+        -webkit-transform: rotate(240deg);
+                transform: rotate(240deg);
+      }
+
+      85.713% {
+        -webkit-transform: rotate(240deg);
+                transform: rotate(240deg);
+      }
+
+    85.714% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+    
+      99.999% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+
+    100% {
+        -webkit-transform: rotate(300deg);
+                transform: rotate(300deg);
+      }
+
+  }
+
+  .loaded_hiding .preloader {
+    -webkit-transition: 1s opacity;
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  .inputName {
+      padding-left: 5px;
+      margin-bottom: 10px;
+      height: 25px;
+      border-color: var(--secondary-color);
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--thirty-color);
+  }
+
+  .inputName::placeholder {
+      color: white;
+      opacity : 0.8;
+  }
+
+  .user-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+/*End preloader*/
 
 .lcd {
     width: 300px;
@@ -152,45 +322,43 @@ width: 900px;
     width: 255px;
     margin: 0;
     padding: 0;
+    
 }
-
-
-
-
-
 
 
 
 .game-nav {
-    margin-left: 20px;
+    margin-top: 10px;
     background-color: var(--primary-color);
     border: 2px solid var(--secondary-color);
     border-radius: 20px 20px;
-    font-size: 26px;
-    text-align: center;
-   
-}
-
-
-.container {
-    padding: 14px;
     display: flex;
     flex-direction: column;
+    font-family: SevenSegment;
+    font-size: 16px;
+    text-align: center;
 }
-/*
-.score-container {
-    
-    font-size: 80px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+
+.info{
+    display: flex;
+    justify-content: space-between;
 
 }
-*/
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
 .score, .level, .moves, .time{
-padding-top: 10px;   
+padding-left: 5px;   
 }
-
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
 button {
     height:45px;
     width: 80px;
@@ -207,9 +375,51 @@ button:hover {
 
 
 
+.highscore-form {
+    font-family: SevenSegment;
+    width: 256px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.highscore-line {
+    display: flex;
+    justify-content:space-between;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.highscore-line span {
+    padding: 5px 30px 5px 0;
+    display: block;
+    font-size: 12px;
+}
+
+.info-current-score {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.info-current-score span {
+    display: block;
+}
 
 
+.buttonOkScore {
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+}
 
+.hide {
+    display: none;
+}
+
+/*End game block*/
 
 
 
@@ -271,13 +481,6 @@ main pre {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-
-/*
-main p, main li, main li, code {
-    font-size: 1.5em;
-    font-family: monospace;
-
-}*/
 
 /* Footer styles*/
 footer {

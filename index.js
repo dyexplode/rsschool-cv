@@ -56,17 +56,18 @@ const movesField = document.querySelector('.moves');
 const levelField = document.querySelector('.level');
 const scoreField = document.querySelector('.score');
 const bodyContainer = document.querySelector('body');
+const highscoreHideForm = document.querySelector('.highscore-form');
 const highscoreForm = document.querySelector('.highscore-content');
 const userForm = document.querySelector('#user-form');
 const buttonHighscore = document.querySelector('.highscore');
 const buttonScoreConfirm = document.querySelector('.buttonOkScore');
 const inputName = document.querySelector('.inputName');
 let movesHintArray = [];
-//const buttonHint = document.querySelector('.hint');
-//buttonHint.addEventListener('click', drawRandomHint);
-//buttonHighscore.addEventListener('click', drawHighscoreAndPaused);
-//buttonScoreConfirm.addEventListener('click', confirmScore);
-//userForm.addEventListener('submit', onEnterUserName);
+const buttonHint = document.querySelector('.hint');
+buttonHint.addEventListener('click', drawRandomHint);
+buttonHighscore.addEventListener('click', drawHighscoreAndPaused);
+buttonScoreConfirm.addEventListener('click', confirmScore);
+userForm.addEventListener('submit', onEnterUserName);
 
 let isRunning = false;
 
@@ -707,7 +708,7 @@ function getHightscore(){
       highscoreArray.splice(n,0,[userName, score]);
       putHightscore(highscoreArray);
       let i = 1;
-      //highscoreForm.innerHTML = `<div class="game-global-state">Game Over</div>`;
+      highscoreForm.innerHTML = `<div class="game-global-state">Game Over</div>`;
       
         highscoreArray.forEach(item =>{
           const scrItem = document.createElement('div');
@@ -760,7 +761,8 @@ function onTimer() {
       isRunning = false;
       gameGlobalState = 'over';
       getHightscore();
-      bodyContainer.classList.add('draw-form');
+      highscoreHideForm.classList.remove('hide');
+      mainField.style.display = 'none';
     }
   }
 }
@@ -777,15 +779,17 @@ function onEnterUserName(event){
 function drawHighscoreAndPaused(){
   gameGlobalState = 'pause';
   getHightscore();
-  bodyContainer.classList.add('draw-form');
+  highscoreHideForm.classList.remove('hide');
+  mainField.style.display = 'none';
+  //bodyContainer.classList.add('draw-form');
 }
 
 function confirmScore(){
- 
   if (gameGlobalState === 'pause'){
     gameGlobalState = 'game';
     onTimer();
-    bodyContainer.classList.remove('draw-form');
+    highscoreHideForm.classList.add('hide');
+    mainField.style.display = 'flex';
   }else{
     gameField.innerHTML = '<div id = "marker"></div></div>';
     selectedCoordinates = [-1,-1];
@@ -797,7 +801,8 @@ function confirmScore(){
     moves = 0;
     ready();
     gameGlobalState = 'game';
-    bodyContainer.classList.remove('draw-form');
+    highscoreHideForm.classList.add('hide');
+    mainField.style.display = 'flex';
   }
 }
 
@@ -817,4 +822,4 @@ function preloadImages(){
 };
 
 preloadImages();
-ready();
+//ready();

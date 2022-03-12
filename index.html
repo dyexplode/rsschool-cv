@@ -11,21 +11,16 @@
 <body>
     <div class="wrap">
     <!--Header part of site-->
-    <nav class="nav-container">
-        <ul class="main-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#language">Languages</a></li>
-        </ul>
+    
+    
 
-
-
-    </nav>
     <div class="container-main"> 
-    <header>
+        <header>
+
+
+
+
+
         <img src="image/photo300px.jpg" alt="Photo" title="My photo">
         <h1>Kakhanouski Uladzimir</h1>
             <div class="contacts" title="Contact information">
@@ -38,19 +33,64 @@
                     </ul>
                 </div>
             </div>
+
+
+
+            <!--Main navigation-->
+<nav class="nav-container">
+    <ul class="main-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#language">Languages</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
         
         <div class="lcd">
+            <div class="preloader">
+                <div class="string-info">
+                    <span class="loadline">game:loading #</span> &nbsp; <div class="rotate"><div class="line-white"></div></div>
+                </div>
+                <form class="user-form" id="user-form">
+                    <input type="text" class="inputName" placeholder="Enter User Name">
+                    <button class="enter-usernsme">Enter</button>
+                </form>
+            </div>
+
             <div class="game-interface"></div>
+            
+            <div class="highscore-form hide">
+                <div class="highscore-content"></div>
+                <button class="buttonOkScore">Ok, chuvak</button>
+            </div>
         </div>
+
         <div class="game-nav">
+            <div class="info">
             <div class="time-container container"><span>Time</span><span class="time"></span></div>
             <div class="score-container container"><span>SCORE</span><span class="score"></span></div>
             <div class="level-container container"><span>Level</span><span class="level"></span></div>
             <div class="moves-container container"><span>Moves</span><span class="moves"></span></div>
+        </div>
+            <div class="buttons">
             <div class="container"><button class="hint">Hint</button></div>
             <div class="container"><button class="highscore">Highscore</button></div>
         </div>
-       
+
+        
+
+    </div>
+    
+    
     </header>
     
     
