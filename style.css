@@ -6,7 +6,6 @@ Reset all margins and paddings properties
     padding: 0px;
 }
 
-
 @font-face {
     font-family: SevenSegment; /* Гарнитура шрифта */
     src: url(assets/fonts/7-Segment.ttf); /* Путь к файлу со шрифтом */
@@ -18,7 +17,6 @@ Reset all margins and paddings properties
     --secondary-color: gold;
     --thirty-color: lightgreen;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -142,11 +140,6 @@ header img{
     color: greenyellow;
     background-color: black;
 }
-/*
-.main-nav a:active { 
-    color: yellow;
-    background-color: red;
-}*/
 
 .main-nav li {
     border: 1px solid #3a3a3a;
@@ -322,10 +315,7 @@ header img{
     width: 255px;
     margin: 0;
     padding: 0;
-    
 }
-
-
 
 .game-nav {
     margin-top: 10px;
@@ -342,7 +332,6 @@ header img{
 .info{
     display: flex;
     justify-content: space-between;
-
 }
 
 .container {
@@ -355,10 +344,12 @@ header img{
 .score, .level, .moves, .time{
 padding-left: 5px;   
 }
+
 .buttons {
     display: flex;
     justify-content: space-around;
 }
+
 button {
     height:45px;
     width: 80px;
@@ -372,8 +363,6 @@ button:hover {
     border-color: var(--thirty-color);
     color: var(--secondary-color);
 }
-
-
 
 .highscore-form {
     font-family: SevenSegment;
@@ -407,7 +396,6 @@ button:hover {
     display: block;
 }
 
-
 .buttonOkScore {
     margin: 5px 0;
     font-size: 16px;
@@ -420,11 +408,6 @@ button:hover {
 }
 
 /*End game block*/
-
-
-
-
-
 
 
 /* Main style*/
@@ -531,10 +514,3 @@ footer div {
     text-decoration: none;
     color: yellow;
 }
-
-/*
-.flink a:visited, main a:visited { 
-    text-decoration: none;
-    color: red;
-}
-*/
