@@ -6,20 +6,56 @@ Reset all margins and paddings properties
     padding: 0px;
 }
 
+
+@font-face {
+    font-family: SevenSegment; /* Гарнитура шрифта */
+    src: url(assets/fonts/7-Segment.ttf); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: gold;
+    --thirty-color: lightgreen;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: white;
-    background-image: url("image/background_15.png");
+    background-color: #085f3d;
+    /*background-image: url("image/background_15.png");*/
     color: white;
 }
 
+.wrap {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main {
+    margin: 0 auto;
+    max-width: 900px;
+    background-image: url("image/background_15.png");
+    background-color: rgba(50, 50, 50, 0.8);
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 /* Header style */
 /* Centered content site */
 header {
-    width: 900px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: rgba(30, 30, 30, 0.8);
+    width: 300px;
+    margin: 25px 0 0 10px;
+    padding: 20px 10px 10px 10px;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 20px;
 }
 
 /* Fix float left property*/
@@ -30,18 +66,17 @@ header:after {
 }
 
 header h1 {
-    font-size: 3em;  
+    font-size: 1.8em;  
 }
 
 /* Avatar image */
 header img{
-    float: left;
-    margin: 0px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 } 
 
 /* Addition 1602 lcd display */
 .contacts {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px;
     border: solid;
     border-top-width: 20px;
     border-right-width: 29px;
@@ -59,7 +94,7 @@ header img{
 .contacts div {
     color: black;
     font-family: monospace;
-    padding: 9px 0px 0px 10px;
+    padding: 2px 0px 0px 10px;
     margin: auto;
     background-color: rgba(82, 216, 29, 0.7);
     border-radius: 4px;
@@ -71,18 +106,26 @@ header img{
 }
 
 /* Contact information text */
-.contacts div ul{
+.contacts-content{
     padding: 0px 0px 3px 5px;
+    list-style: none;
 }
 
 /* Main navigation */
+.nav-container {
+    margin-bottom: 15px;
+}
+
 .main-nav {
     list-style: none;
     list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-nav li{   
-    float:left;
+   margin: 2px;
 }
 
 .main-nav li a {
@@ -105,33 +148,344 @@ header img{
     background-color: red;
 }*/
 
-.main-nav li + li {
-    border-left: 1px solid #3a3a3a;
+.main-nav li {
+    border: 1px solid #3a3a3a;
+
+}
+/*Game-style*/
+/* Preloader game*/
+.preloader {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    right: 20px;
+    bottom: 50px;
+    border-radius: 5px;
+    background: black;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.loadline {
+ color: white;
+}
+
+.rotate {
+    width: 25px;
+    height: 25px;
+    position:relative;
+    -webkit-animation: preloader-rotate 0.5s infinite linear;
+    animation: preloader-rotate 0.4s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.string-info {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.line-white {
+    width: 100%;
+    height: 2.5px;
+    background: white;
+    margin: 3px 0;
+  }
+
+@keyframes preloader-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+
+    14.284% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+
+    14.285% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+      }
+    
+      28.57% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+      }
+
+    28.571% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+      }
+
+      42.856% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+      }
+
+      42.857% {
+        -webkit-transform: rotate(120deg);
+                transform: rotate(120deg);
+      }
+    57.142% {
+        -webkit-transform: rotate(120deg);
+                transform: rotate(120deg);
+      }
+
+    57.143% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+      71.427% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+
+    71.428% {
+        -webkit-transform: rotate(240deg);
+                transform: rotate(240deg);
+      }
+
+      85.713% {
+        -webkit-transform: rotate(240deg);
+                transform: rotate(240deg);
+      }
+
+    85.714% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+    
+      99.999% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+
+    100% {
+        -webkit-transform: rotate(300deg);
+                transform: rotate(300deg);
+      }
+
+  }
+
+  .loaded_hiding .preloader {
+    -webkit-transition: 1s opacity;
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  .inputName {
+      padding-left: 5px;
+      margin-bottom: 10px;
+      height: 25px;
+      border-color: var(--secondary-color);
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--thirty-color);
+  }
+
+  .inputName::placeholder {
+      color: white;
+      opacity : 0.8;
+  }
+
+  .user-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+/*End preloader*/
+
+.lcd {
+    width: 300px;
+    height: 443px;
+    padding: 34px 0 0 26px;
+    box-sizing: border-box;
+    background-repeat: none;
+    background-image: url(image/game-background.png);
+    position:relative;
+}
+
+.game-interface {
+    width: 255px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.game-nav {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: SevenSegment;
+    font-size: 16px;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
 
 }
 
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.score, .level, .moves, .time{
+padding-left: 5px;   
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    height:45px;
+    width: 80px;
+    background-color: transparent;
+    color: var(--thirty-color);
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    border-color: var(--thirty-color);
+    color: var(--secondary-color);
+}
+
+
+
+.highscore-form {
+    font-family: SevenSegment;
+    width: 256px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.highscore-line {
+    display: flex;
+    justify-content:space-between;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.highscore-line span {
+    padding: 5px 30px 5px 0;
+    display: block;
+    font-size: 12px;
+}
+
+.info-current-score {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.info-current-score span {
+    display: block;
+}
+
+
+.buttonOkScore {
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+/*End game block*/
+
+
+
+
+
+
+
 /* Main style*/
 main {
-    width: 900px;
+    
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(30, 30, 30, 0.8);
+    
     /*color:greenyellow;*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+section {
+    margin: 15px 0;
+    padding: 10px 0;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 20px;
+}
+
 main h2{
-    margin: 30px 0px 20px 30px;
+    margin: 10px 0px 20px 30px;
 }
 
 main p, main ul, main ol, main pre {
-    margin: 10px 0px 0px 50px;
+    margin: 10px 30px 0px 50px;
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-family: monospace;
+    text-align: justify;
+}
+
+main pre {
+    font-size: 1.1rem;
+    line-height: 130%;
+    font-style: italic;
+}
+
+
+.skills-ex ol{
+    padding : 0 0 0 35px;
+
+}
+
+.skills-ex ol ul{
+    margin: 0 0 0 20px;
+}
+
+.skill-list li {
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.work-ex p, .work-ex a {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* Footer styles*/
 footer {
     width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0px;
     border: 20px solid;
     color: white;
@@ -139,7 +493,7 @@ footer {
     -webkit-border-image: url(image/atmega200.png) 20 round round; 
     -o-border-image: url(image/atmega200.png) 20 round round;
     border-image: url(image/atmega200.png) 20 round round;
-    box-sizing: padding-box;
+    box-sizing: border-box;
     position: relative;
 
 }
@@ -153,7 +507,7 @@ footer div {
 
 .fcontainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .flink {
@@ -178,7 +532,9 @@ footer div {
     color: yellow;
 }
 
+/*
 .flink a:visited, main a:visited { 
     text-decoration: none;
     color: red;
 }
+*/
