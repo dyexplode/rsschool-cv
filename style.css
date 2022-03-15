@@ -65,11 +65,13 @@ header:after {
 
 header h1 {
     font-size: 1.8em;  
+
 }
 
 /* Avatar image */
 header img{
     border-radius: 20px 20px 0px 0px;
+    
 } 
 
 /* Addition 1602 lcd display */
