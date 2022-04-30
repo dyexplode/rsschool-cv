@@ -767,6 +767,7 @@ function onTimer() {
   }
 }
 
+
 function onEnterUserName(event){
   event.preventDefault();
   playerLogo.play();
